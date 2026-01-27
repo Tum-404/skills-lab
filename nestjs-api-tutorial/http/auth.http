@@ -1,0 +1,37 @@
+### configuration
+@baseUrl = http://localhost:3000/auth/
+
+
+### POST /signup
+POST {{baseUrl}}signup
+Content-Type: application/json
+
+{
+  "email": "johndoe@email.com",
+  "password": "strongpassword123",
+  "firstName": "John",
+  "lastName": "Doe"
+}
+
+
+### Signup with invalid data
+POST {{baseUrl}}signup
+Content-Type: application/json
+
+{
+  "email": "example@email.com",
+  "password": "123",
+  "firstName": "John",
+  "lastName": "Doe",
+  "test": "this-should-not-be-here"
+}
+
+
+### POST /signin
+POST {{baseUrl}}signin
+Content-Type: application/json
+
+{
+  "email": "johndoe@email.com",
+  "password": "strongpassword123"
+}

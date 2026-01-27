@@ -1,0 +1,8 @@
+### define variables
+@url = http://localhost:3000/users/
+@jwt_token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjE0LCJlbWFpbCI6ImpvaG5kb2VAZW1haWwuY29tIiwiaWF0IjoxNzY5MzQ3NDM4LCJleHAiOjE3NjkzNDgzMzh9.Mc_8dWI_fg4X0s_to4cdMptXYMcn-DldQxVhIkJzYpU
+
+### Get current user profile
+GET {{url}}me
+Accept: application/json
+Authorization: Bearer {{jwt_token}}

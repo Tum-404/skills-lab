@@ -1,0 +1,12 @@
+@url = http://localhost:3000
+
+### Get all users
+GET {{url}}/users
+Accept: application/json
+
+
+### Get user by UUID
+@userId = 
+GET {{url}}/users/{{userId}}
+Accept: application/json
+

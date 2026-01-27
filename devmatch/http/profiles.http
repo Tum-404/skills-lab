@@ -1,0 +1,28 @@
+### fetch all profiles
+http://localhost:3000/profiles
+
+### fetch profile by id
+http://localhost:3000/profiles/0ecb354b-5fb0-420c-b6bd-e29067a896cf
+
+
+### create profile
+POST http://localhost:3000/profiles
+Content-Type: application/json
+
+{
+    "name": "Harry Smith",
+    "description": "A software developer from March."
+}
+
+### update profile
+PUT http://localhost:3000/profiles/0ecb354b-5fb0-420c-b6bd-e29067a896cf
+Content-Type: application/json
+
+{
+    "name": "Harry Smart",
+    "description": "An experienced software developer from Bangkok."
+}
+
+
+### delete profile
+DELETE http://localhost:3000/profiles/0ecb354b-5fb0-420c-b6bd-e29067a896cf
